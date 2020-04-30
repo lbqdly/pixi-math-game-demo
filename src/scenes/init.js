@@ -13,6 +13,7 @@ export default class SceneInit extends PIXI.Container {
     }
     progress(num) {
         console.log(num)
+        document.title = `加载... ${num.toFixed(2)}`
     }
 
     loadStart(assets) {
